@@ -1,0 +1,9 @@
+variable "pub_ip" {}
+
+resource "azurerm_public_ip" "pip"{
+    for_each=var.pub_ip
+    name = each.value.name
+    resource_group_name = each.value.resource_group_name
+    allocation_method = "Static"
+    location = each.value.location
+}
