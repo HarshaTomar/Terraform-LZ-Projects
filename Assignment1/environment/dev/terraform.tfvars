@@ -3,6 +3,11 @@ rgs = {
     name     = "new_rg"
     location = "EastUS"
   }
+
+  "rg2" = {
+    name     = "teju_rggit status"
+    location = "EastUS"
+  }
 }
 
 vnets = {
